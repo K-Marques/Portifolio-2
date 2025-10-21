@@ -20,9 +20,9 @@ Este é meu portfólio pessoal, com meus projetos, habilidades e formas de conta
 ---
 
 ## Contato
-- 📧 Email: [karenalexandramarques@gmail.com](mailto:karenalexandramarques@gmail.com)  
-- 📱 WhatsApp: [Clique aqui](https://wa.me/141991254673)  
-- 💼 LinkedIn: [Karen Alexandra](https://www.linkedin.com/in/karen-alexandra-marques)  
+- 📧 Email: [marques.dev@outlook.com.br](mailto:marques.dev@outlook.com.br)  
+- 📱 WhatsApp: [Fale comigo!](https://wa.me/141991728368)  
+- 💼 LinkedIn: [Karen Alexandra](https://www.linkedin.com/in/karen-alexandra-98a227349/)  
 - 📸 Instagram: [@karen.alecsandra](https://www.instagram.com/karen.alecsandra/)  
 
 ---
