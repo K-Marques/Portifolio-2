@@ -223,6 +223,9 @@ a.button {
   display: flex;
   flex-direction: co;
 }
+.light #conheca-me .card {
+  background-color: var(--light-card);
+}
 
 /* UNIFICAR EFEITO HOVER: gradiente só no hover */
 .button,
