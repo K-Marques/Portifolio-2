@@ -20,10 +20,12 @@ Este é meu portfólio pessoal, com meus projetos, habilidades e formas de conta
 ---
 
 ## Contato
+
 - 📧 Email: [marques.dev@outlook.com.br](mailto:marques.dev@outlook.com.br)  
 - 📱 WhatsApp: [Fale comigo!](https://wa.me/141991728368)  
 - 💼 LinkedIn: [Karen Alexandra](https://www.linkedin.com/in/karen-alexandra-98a227349/)  
-- 📸 Instagram: [@karen.alecsandra](https://www.instagram.com/karen.alecsandra/)  
+- 📸 Instagram: [@karen.alecsandra](https://www.instagram.com/karen.alecsandra/)
+
 
 ---
 
