@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Karen Marques — Portfólio Profissional</title>
+    <meta
+      name="description"
+      content="Portfólio profissional de Karen Marques — estudante de Ciências da Computação"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- HEADER PONTA A PONTA -->
+    <header>
+      <div class="logo">Karen Marques</div>
+      <nav>
+        <a href="#apresentacao">Apresentação</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#certificacoes">Certificações</a>
+        <a href="#contato">Contato</a>
+        <span class="theme-toggle" onclick="toggleTheme()">🌙</span>
+      </nav>
+    </header>
+
+    <!-- CONTAINER PRINCIPAL CENTRALIZADO -->
+    <div class="container-geral">
+      <!-- PERFIL -->
+      <div class="perfil">
+        <img
+          src="Image/karen.png"
+          alt="Foto Karen Marques"
+          class="foto-perfil"
+        />
+      </div>
+
+      <!-- APRESENTAÇÃO -->
+      <section id="apresentacao">
+        <h1>Apresentação</h1>
+        <div class="card">
+          <p>
+            Sou Karen Alexandra Marques, uma profissional dedicada à criação de
+            soluções digitais e análise de dados.
+          </p>
+          <p>
+            Formação em Ciências da Computação e certificações em Python, Power
+            BI e desenvolvimento web.
+          </p>
+          <p>
+            Experiência com HTML, CSS, JavaScript, Git/GitHub e interesse em IA
+            / Machine Learning.
+          </p>
+        </div>
+      </section>
+
+      <!-- FORMAÇÃO -->
+      <section id="formacao">
+        <h2>Formação e Cursos</h2>
+        <div class="card">
+          <ul>
+            <p><strong>Graduação:</strong></p>
+            <li>Ciências da Computação – FAM (2028)</li>
+            <br />
+            <p><strong>Cursos:</strong></p>
+            <li>Power BI – Tetra Educação (2025)</li>
+            <li>Python – Santander (2025)</li>
+            <li>HTML, CSS, JS – Bradesco (2025)</li>
+            <li>Imersão IA – Alura (2025)</li>
+            <li>JavaScript – Hashtag (2025)</li>
+          </ul>
+          <br />
+
+  <section id="habilidades">
+  <h2>Habilidades Técnicas</h2>
+  <div class="badges">
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+    <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=black" alt="Power BI">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+    <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code">
+  </div>
+</section>
+
+
+
+      <section id="certificacoes">
+        <h2>Certificações</h2>
+        <div class="card certificates">
+          <button class="cert-button" data-img="Image/certificado-powerbi.png">
+            Power BI – Tetra Educação
+          </button>
+          <button class="cert-button" data-img="Image/certificado-python.png">
+            Python – Santander
+          </button>
+          <button
+            class="cert-button"
+            data-img="Image/certificado-htmlcssjs.png"
+          >
+            HTML, CSS, JS – Bradesco
+          </button>
+          <button class="cert-button" data-img="Image/certificado-ia.png">
+            Imersão IA – Alura
+          </button>
+          <button class="cert-button" data-img="Image/certificado-js.png">
+            JavaScript – Hashtag
+          </button>
+        </div>
+      </section>
+
+      <!-- PORTFÓLIO -->
+      <section id="portfolio">
+        <h2>Portfólio</h2>
+        <div class="card">
+          <p>Veja meus projetos e contribuições no GitHub:</p>
+          <a class="button" href="https://github.com/k-marques" target="_blank">
+            <img
+              src="Image/github.png"
+              alt="GitHub"
+              style="width: 24px; height: 24px"
+            />
+          </a>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section id="contato">
+        <h2>Contato</h2>
+        <div class="card">
+          <p>Entre em contato comigo:</p>
+          <div class="contact-icons">
+            <a href="https://wa.me/141991728368" target="_blank"
+              ><img src="Image/whatsapp.png" alt="whatsapp"
+            /></a>
+            <a
+              href="mailto:marques.dev@outlook.com.br"
+              onclick="copyEmail(event)"
+              ><img src="Image/email.png" alt="email"
+            /></a>
+            <a href="tel:+141991728368" onclick="copyEmail(event)"
+              ><img src="Image/contato.png" alt="contato"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONHEÇA-ME -->
+      <section id="conheca-me">
+        <h2>Conheça-me</h2>
+        <div class="card contact-icons">
+          <a
+            href="https://www.instagram.com/karen.alecsandra"
+            target="_blank"
+            title="Instagram"
+            class="button"
+          >
+            <img src="Image/instagram.png" alt="Instagram" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/karen-alexandra-98a227349/"
+            target="_blank"
+            title="LinkedIn"
+            class="button"
+          >
+            <img src="Image/linkedin.png" alt="LinkedIn" />
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      function toggleTheme() {
+        document.body.classList.toggle("light");
+        const toggle = document.querySelector(".theme-toggle");
+        toggle.textContent = document.body.classList.contains("light")
+          ? "🌞"
+          : "🌙";
+      }
+      function copyEmail(e) {
+        e.preventDefault();
+        navigator.clipboard.writeText("marques.dev@outlook.com.br");
+        alert("E-mail copiado para a área de transferência");
+      }
+    </script>
+    <div class="cert-modal" id="cert-modal">
+      <span class="close-modal" id="close-modal">&times;</span>
+      <img src="" alt="Certificado" id="modal-img" />
+    </div>
+
+    <script src="certificados.js"></script>
+  </body>
+</html>

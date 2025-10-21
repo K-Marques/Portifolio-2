@@ -1,0 +1,370 @@
+:root {
+  --dark-bg: #0b1a36;
+  --dark-card: #12254d;
+  --dark-text: #e6eef8;
+  --light-bg: #f0f8ff;
+  --light-card: #ffffff;
+  --light-text: #0b1a36;
+  --accent1: #4f46e5;
+  --accent2: #8b5cf6;
+  --accent3: #ff6bcb;
+  --radius: 16px;
+  --font-sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  --transition: 0.3s ease;
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+  transition: background-color var(--transition), color var(--transition);
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 2rem;
+  background: linear-gradient(
+    90deg,
+    var(--accent1),
+    var(--accent2),
+    var(--accent3)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: inherit;
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: var(--accent3);
+}
+
+.theme-toggle {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* CONTAINER */
+.container-geral {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* PERFIL */
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.foto-perfil {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+/* SEÇÕES */
+section {
+  width: 100%;
+  margin-bottom: 60px;
+}
+h1,
+h2 {
+  margin-bottom: 20px;
+}
+
+.card {
+  background: var(--dark-card);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 700px;
+  transition: background var(--transition);
+}
+
+/* BOTÕES */
+a.button {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: linear-gradient(
+    90deg,
+    var(--accent1),
+    var(--accent2),
+    var(--accent3)
+  );
+  color: #0b1a36;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/* SKILLS / CERTIFICADOS */
+.skills,
+.certificates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skill,
+.certificate {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* CONTATO */
+.contact-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+.contact-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+}
+
+/* CONHEÇA-ME */
+/* Deixa a seção "conheça-me" com o mesmo alinhamento, espaçamento e aparência das seções anteriores */
+#conheca-me {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+#conheca-me h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Mantém alinhamento interno igual às outras seções */
+#conheca-me .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+/* Ícones alinhados no mesmo estilo do "Contato" */
+#conheca-me .button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+/* Botões/ícones padronizados */
+#conheca-me .button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+/* Card idêntico aos outros */
+#conheca-me .card {
+  background: var(--dark-card);
+  border-radius: var(--radius);
+  padding: 20px;
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 20px;
+  transition: background var(--transition);
+  display: flex;
+  flex-direction: co;
+}
+
+/* UNIFICAR EFEITO HOVER: gradiente só no hover */
+.button,
+a.button,
+.contact-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05); /* fundo neutro no estado normal */
+  color: #0b1a36;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease,
+    color 0.25s ease;
+  will-change: transform, background;
+}
+
+/* estado hover / focus */
+.button:hover,
+a.button:hover,
+.contact-icons a:hover,
+.button:focus,
+a.button:focus,
+.contact-icons a:focus {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.12);
+  background: linear-gradient(
+    90deg,
+    var(--accent1),
+    var(--accent2),
+    var(--accent3)
+  );
+  color: #0b1a36;
+  outline: none;
+}
+
+.contact-icons a img,
+.button img {
+  width: 24px; /* tamanho da imagem dentro do botão */
+  height: 24px;
+  object-fit: contain;
+  display: block;
+}
+
+.cert-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: linear-gradient(
+    90deg,
+    var(--accent1),
+    var(--accent2),
+    var(--accent3)
+  );
+  color: #0b1a36;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cert-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.12);
+}
+
+/* MODAL */
+.cert-modal {
+  display: none; /* começa escondido */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.cert-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.cert-modal .close-modal {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*teste*/
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.badges img {
+  height: 35px; /* altura uniforme */
+}
+
+/*fim do teste*/
+
+/* TEMA CLARO */
+.light {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+.light .card {
+  background-color: var(--light-card);
+}
+.light nav a:hover {
+  color: var(--accent3);
+}
+
+/* RESPONSIVO */
+@media (max-width: 880px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .container-geral {
+    padding: 0 10px 20px 10px;
+  }
+}
+
+/* FIM DO MEU CSS */
